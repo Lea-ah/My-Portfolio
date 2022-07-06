@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <=========== BOOTSTRAP =============> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- <=========== CSS =============> -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <=========== GOOGLE FONT =============> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <!-- <=========== FONTAWESOME ICONS =============> -->
+  <script src="https://kit.fontawesome.com/d6cbc6c025.js" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <title>Lea's Portfolio - Resume</title>
+
+</head>
+<body>
+
+  <!-- <=========== NAVBAR =============> -->
+
+<nav>
+  <div class="logo">
+    <a onclick="document.location='index.html'" href="#home">LOGO</a>
+  </div>
+  <ul class="nav-links">
+    <li>
+      <a onclick="document.location='index.html'" class="btn-home" href="#home">Home</a>
+    </li>
+    <li>
+      <a onclick="document.location='about.html'" class="btn-about" href="#about">About</a>
+    </li>
+    <li>
+      <a onclick="document.location='projects.html'" class="btn-projects" href="#projects">Projects</a>
+    </li>
+    <li>
+      <a onclick="document.location='contact.html'" class="btn-contact" href="#">Contact</a>
+    </li>
+    <li>
+      <a class="nav_icons" href="https://github.com/Lea-ah" target="_blank">
+        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_dgBN4P.json" background="transparent" class="nav_icons icon_github" speed="1" loop  autoplay></lottie-player>
+      </a>
+    </li>
+
+    <li>
+      <a  class="nav_icons" href="https://www.linkedin.com/in/lea-moesch/" target="_blank">
+        <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_tgzwnxcf.json"  background="transparent" class="nav_icons" speed="1"  loop  autoplay></lottie-player>
+      </a>
+    </li>
+
+  </ul>
+
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
+
+ <!-- <=========== RESUME =============> -->
+
+
+<div class="container_accordion">
+
+<button class="accordion accordion_education">EDUCATION</button>
+<div class="panel">
+        <p>APRIL 22 ~ JUNE 22
+          > Front-End developer
+          Intensive coding bootcamp at ` Le Wagon `</p>
+    </div>
+
+    <button class="accordion accordion_work">WORK EXPERIENCE</button>
+    <div class="panel">
+      <p>NOV 2021 ~ MARCH 2022
+        > Administrator at “Transformer” (Fitzroy)
+        - Setting / updating our new POS system from scratch: SQUARE
+        as well as the reservation system: NOW BOOK IT.
+        - Improving the customer`s experience by making the website (using WIX) more under
+        standable, therefore reduced the amount of emails and phone calls while keeping the
+        venue booked out.
+        - Creating marketing emails to book out all of our events.
+        - Creating flyers and cocktails list using InDESIGN & ILLUSTRATOR.
+      </p>
+      <p>
+        SEPT 2020 ~ NOV 2021
+        > Venue Manager at “Transformer” (Fitzroy)
+        - Daily Coordination of the restaurant management operations, resulting in greater
+        productivity and higher levels of customer satisfaction.
+        - Interviewed, hired and counseled waitstaff and bartenders (new team from scratch,
+        due to Covid)
+        - Leading a team of 15 - 18 people and ensuring of their knowledge of the products
+        - Hosting and ensuring the rotation between shifts: up to 180 guests per night
+        - Daily cashing-up (using SQUARE & EXCEL)
+      </p>
+      <p>
+        NOV 2019 ~ AUGUST 2020
+        > Assistant Manager at “Transformer” (Fitzroy)
+      </p>
+      <p>
+        2009 ~ NOV 2021
+        > Several Hospitality jobs in: France, Australia, Finland
+        - From Bistro to Michelin Star restaurants & owning a business
+      </p>
+    </div>
+
+<button class="accordion accordion_skills">SKILLS</button>
+<div class="panel">
+  <p>Programing Languages / Technologies:
+      Ruby on Rails [ MVC ]
+      Javascript ES6
+      HTML5 / CSS3
+      Bootstrap5 / SASS
+      SQL
+      API
+      GIT / GITHUB
+      VS Code / Linux: Ubuntu</p>
+    <p>
+      Eye for details
+      Good Communication
+      Problem Solving
+      Leadership
+      Anticipating client`s
+      needs
+      Organised
+      SKILLS
+      REFERENCES
+      Leek & bacon quiche
+    </p>
+</div>
+
+<button class="accordion accordion_contact">CONTACT</button>
+<div class="panel">
+  <p> 0422 234 041
+     leamoesch@gmail.com
+     linkedin
+     github</p>
+</div>
+
+<button class="accordion accordion_references">REFERENCES</button>
+<div class="panel">
+  <p> Transformer Manager:
+    Surya Wirawan
+    0435 324 785
+    manager@transformerfitzroy.com</p>
+</div>
+
+</div>
+
+  <!-- <=========== JAVASCRIPT =============> -->
+<script src="app.js"></script>
+
+<!-- <=========== BOOTSTRAP bundle =============> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
