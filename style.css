@@ -243,9 +243,6 @@ nav {
 
 /* < =============== NAME + DESCRIPTION =============== > */
 
-
-@media screen and (min-width:830px) {}
-
   .name_lea {
     position: relative;
     font-size: 6rem;
@@ -289,7 +286,7 @@ nav {
     -webkit-text-stroke: 0vw rgb(3, 1, 15);
     border-right: 2px solid rgba(25, 255, 94, 0);
     overflow: hidden;
-    animation: animate 7s linear infinite;
+    animation: animate 6s linear infinite;
   }
 
   @keyframes animate {
@@ -297,7 +294,7 @@ nav {
       width: 0%;
     }
     90% {
-      width: 55%;
+      width: 100%;
     }
   }
 
@@ -359,12 +356,178 @@ nav {
     width: 80%;
   }
 }
-
 }
 
+/* < =============== PICTURE - HOME  =============== > */
+
+.display_pic_resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.home_display {
+  display: flex;
+  justify-content: space-around;
+}
+
+.responsive_picture {
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.responsive_picture:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media screen and (max-width:630px) {
+
+  .display_pic_resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+  .home_display {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .responsive_picture {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+    backdrop-filter: grayscale(100%);
+  }
+}
+
+/* < =============== RESUME =============== > */
+
+/* < == button == > */
+.button_resume {
+  background-color: rgb(3, 1, 15);
+  border: 2px solid rgb(102, 102, 102);
+  border-radius: 6px;
+  padding: 10px 50px;
+  color: rgb(102, 102, 102);
+  margin-top: 20px;
+}
+
+.button_resume:hover, .button_resume:active {
+  color: rgb(6, 255, 27);
+  border: 3px solid rgb(6, 255, 27);
+}
+
+/* < == resume page == > */
+.container_accordion{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%;
+  text-align: center;
+  margin-top: 70px;
+  }
+
+.accordion {
+  margin: auto;
+  background-color: rgb(3, 1, 15);
+  color: rgb(102, 102, 102);
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  color: rgb(3, 1, 15);
+  font-size: 25px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.accordion_education:hover, .accordion_education:active {
+  margin-bottom: 5px;
+  border: 2px solid rgb(255, 11, 125);
+  transition: 0.5s ease-in-out;
+  color: rgb(255, 11, 125);
+  font-size: 22px;
+  align-items: center;
+}
+
+.accordion_work:hover, .accordion_work:active {
+  margin-bottom: 5px;
+  border: 2px solid rgb(6, 255, 27);
+  transition: 0.5s ease-in-out;
+  color: rgb(6, 255, 27);
+  font-size: 22px;
+}
+
+.accordion_skills:hover, .accordion_skills:active {
+  margin-bottom: 5px;
+  border: 2px solid rgb(255, 241, 44);
+  transition: 0.5s ease-in-out;
+  color: rgb(255, 241, 44);
+  font-size: 22px;
+}
+
+.accordion_references:hover, .accordion_references:active {
+  margin-bottom: 5px;
+  border: 2px solid rgb(8, 226, 255);
+  transition: 0.5s ease-in-out;
+  color: rgb(8, 226, 255);
+  font-size: 22px;
+}
 
 /* < =============== ABOUT =============== > */
 
+/* < ======= Letters ======== > */
 .about_box {
   display: flex;
   justify-content: center;
@@ -418,115 +581,12 @@ nav {
   color: rgb(8, 226, 255);
 }
 
+/* < ======= ABOUT - text ======== > */
 
-/* < =============== RESUME =============== > */
-
-/* < == button == > */
-.button_resume {
-  background-color: rgb(3, 1, 15);
-  border: 2px solid rgb(102, 102, 102);
-  border-radius: 6px;
-  padding: 10px 50px;
-  color: rgb(102, 102, 102);
-  margin-left: 120px;
-}
-
-.button_resume:hover, .button_resume:active {
-  color: rgb(6, 255, 27);
-  border: 3px solid rgb(6, 255, 27);
-}
-
-/* < == resume page == > */
-.container_accordion{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  width: 90%;
+.container-about {
+  width: 200px;
+  height: auto;
   text-align: center;
-  margin-top: 70px;
-  }
-
-.accordion {
-  margin: auto;
-  background-color: rgb(3, 1, 15);
-  color: rgb(102, 102, 102);
-  cursor: pointer;
-  padding: 18px;
-  width: 90%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  color: rgb(3, 1, 15);
-  font-size: 25px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  width: 90%;
-  margin: auto;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  text-align: start;
-}
-
-.accordion_education:hover, .accordion_education:active {
-  margin-bottom: 5px;
-  background-color: rgb(255, 47, 151);
-  transition: 1s ease;
-  color: rgb(3, 1, 15);
-  font-size: 22px;
-}
-
-.accordion_work:hover, .accordion_work:active {
-  margin-bottom: 5px;
-  background-color: rgb(47, 255, 99);
-  transition: 1s ease;
-  color: rgb(3, 1, 15);
-  font-size: 22px;
-}
-
-.accordion_skills:hover, .accordion_skills:active {
-  margin-bottom: 5px;
-  background-color: rgb(47, 224, 255);
-  transition: 1s ease;
-  color: rgb(3, 1, 15);
-  font-size: 22px;
-}
-
-.accordion_contact:hover, .accordion_contact:active {
-  margin-bottom: 5px;
-  background-color: rgb(255, 123, 47);
-  transition: 1s ease;
-  color: rgb(3, 1, 15);
-  font-size: 22px;
-}
-
-.accordion_references:hover, .accordion_references:active {
-  margin-bottom: 5px;
-  background-color: rgb(255, 47, 99);
-  transition: 1s ease;
-  color: rgb(3, 1, 15);
-  font-size: 22px;
 }
 
 
@@ -690,7 +750,6 @@ nav {
 .blog-card .description .read-more a:after {
   content: "\f061";
   font-family: FontAwesome;
-  margin-left: -10px;
   opacity: 0;
   vertical-align: middle;
   transition: margin .3s, opacity .3s;
@@ -742,12 +801,12 @@ nav {
   }
 
   .blog-card .description:before {
-    transform: skewX(-6deg);
+    transform: skewX(-0deg);
     content: "";
     background: rgb(8, 226, 255);
     width: 1px;
     position: absolute;
-    left: -6px;
+    left: 1px;
     top: 0;
     bottom: 0;
     z-index: -1;
@@ -759,8 +818,8 @@ nav {
 
   .blog-card.alt .description:before {
     left: inherit;
-    right: 4px;
-    transform: skew(5deg)
+    right: 1px;
+    transform: skew(0deg)
   }
 }
 
@@ -770,3 +829,72 @@ nav {
 
 
 /* < =============== CONTACT =============== > */
+
+.container_contact {
+  width: 100%;
+  height: 100vh;
+  background: rgb(3, 1, 15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: rgb(3, 1, 15);
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  color: rgb(6, 255, 27);
+}
+
+form h3 {
+  color: rgb(102, 102, 102);
+  font-weight: 800;
+  margin-bottom: 20px;
+  z-index: 1;
+  
+}
+
+form input, form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 20px;
+  background-color: rgb(3, 1, 15);
+  border: 2px solid rgb(102, 102, 102);
+  color: rgb(6, 255, 27);
+}
+
+form input:focus, form textarea:focus {
+  color: rgb(255, 10, 202);
+  font-size: 22px;
+}
+
+.contact_button {
+  background-color: rgb(3, 1, 15);
+  padding: 15px;
+  /* border: 1px solid rgb(255, 241, 44); */
+  color: rgb(255, 10, 202);
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 7px;
+  font-weight: bold;
+  transform: rotate(-2deg);
+}
+
+.contact_button:focus, .contact_button:hover {
+  color: rgb(255, 10, 202);
+  border: 3px solid rgb(255, 241, 44);
+}
+
+input:-webkit-autofill, input:focus:-webkit-autofill {
+  -webkit-text-fill-color: rgb(6, 255, 27);
+  -webkit-box-shadow: 0 0 0px 1000px rgb(3, 1, 15) inset;
+}

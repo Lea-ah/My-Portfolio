@@ -1,3 +1,4 @@
+
 // < =============== NAVBAR =============== >
 
 // Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -26,10 +27,6 @@ const navSlide = () => {
 
 navSlide();
 
-// < =============== ABOUT =============== >
-
-
-
     // < =============== RESUME =============== >
 
 var acc = document.getElementsByClassName("accordion");
@@ -46,3 +43,5 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// < =============== CONTACT =============== >
