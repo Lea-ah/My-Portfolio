@@ -33,5 +33,7 @@ function totalPrice() {
  // return $0
  // }
 
- 
+ //totalCost = `${total}` + 
+
+
 }
