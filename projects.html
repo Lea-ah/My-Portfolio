@@ -29,7 +29,7 @@
 <!-- <=========== NAVBAR =============> -->
 <nav>
   <div class="logo">
-    <a onclick="document.location='index.html'" href="#home">LOGO</a>
+    <a onclick="document.location='index.html'" href="#home"><img src="images/grey.png" alt="logo" class="logo-img"></a>
   </div>
   <ul class="nav-links">
     <li>
@@ -63,68 +63,70 @@
     <div class="line2"></div>
     <div class="line3"></div>
   </div>
-</nav> 
+</nav>
 
 <!-- <=========== CARDS =============> -->
-<main data-router-wrapper>
-  <section data-router-view="projects">
-<!-- <=========== Project 1 - Gig Fox =============> -->
+<div class="project_cards">
 
-  <div class="blog-card">
-    <div class="meta">
-      <div class="photo" style="background-image: url(images/welcome-fox-1.png)"></div>
-      <ul class="details">
-        <!-- <li class="author"><a href="#">John Doe</a></li> -->
-        <li class="date">May, 2022</li>
-        <li class="tags">
-          <ul>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">SASS</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">Rails</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="description">
-      <h1>GIG-FOX</h1>
-      <h2>AirBnB clone</h2>
-      <p>Do you own most of Melbourne's best concert venue and never know how to rent them out?</p>
-      <p>Gig-Fox got you covered!</p>
-      <p>No more struggling finding the perfect venue to play at with your band!</p>
-      <p class="read-more">
-        <a a onclick="document.location='gig-fox.html'" href="#gig-fox">Read More</a>
-      </p>
-    </div>
-  </div>
-  <div class="blog-card alt">
-    <div class="meta">
-      <div class="photo" style="background-image: url(images/dayt_logo.jpg)"></div>
-      <ul class="details">
-        <!-- <li class="author"><a href="#">Jane Doe</a></li> -->
-        <li class="date">June, 2022</li>
-        <li class="tags">
-          <ul>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">SASS</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">Rails</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="description">
-      <h1>DAYT</h1>
-      <h2>Your new travelling app !</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-      <p class="read-more">
-        <a onclick="document.location='dayt.html'" href="#dayt">Read More</a>
-      </p>
-    </div>
+  <!-- <=========== Project 2 - DAYT =============> -->
+  <div class="dayt_card">
+    <article class="card">
+      <header class="card__thumb">
+        <a onclick="document.location='dayt.html'" href="#dayt"><img src="images/dayt_logo.jpg"/></a>
+      </header>
+      <date class="card__date">
+        <span class="card__date__month">June</span>
+        <br/>
+        <span class="card__date__day">2022</span>
+      </date>
+
+      <div class="card__body">
+        <div class="card__category"><a onclick="document.location='dayt.html'" href="#dayt">Learn More <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></div>
+        <h2 class="card__title"><a onclick="document.location='dayt.html'" href="#dayt">Your new favourite travelling app</a></h2>
+        <div class="card__subtitle">It's a Dayt !</div>
+        <p class="card__description">No more wandering around, not knowing what to do on a trip, you can now select your preferences, curated by locals, to offer you the best experience, anywhere !</p>
+      </div>
+
+      <footer class="card__footer">
+        <span></span> HTML
+        <span></span> SCSS
+        <span></span> JavaScript
+        <span></span> Ruby on Rails
+      </footer>
+    </article>
   </div>
 
-  </section>
-</main>
+  <!-- <=========== Project 2 - GIG-FOX =============> -->
+  <div class="gig-fox_card">
+    <article class="card">
+      <header class="card__thumb">
+        <a onclick="document.location='gig-fox.html'" href="#gig-fox"><img src="images/Gig-fox_logo.jpg"/></a>
+      </header>
+      <date class="card__date">
+        <span class="card__date__month">May</span>
+        <br/>
+        <span class="card__date__day">2022</span>
+      </date>
+
+      <div class="card__body">
+        <div class="card__category"><a onclick="document.location='gig-fox.html'" href="#gig-fox">Learn More <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></div>
+        <h2 class="card__title"><a onclick="document.location='gig-fox.html'" href="#gig-fox">Book / Rent a concert venue</a></h2>
+        <div class="card__subtitle">AirBnB clone</div>
+        <p class="card__description">Do you own most of Melbourne's best concert venue and never know how to rent them out?<br>
+        Gig-Fox got you covered!<br>
+        And no more struggling finding the perfect venue to play at with your band!</p>
+      </div>
+
+      <footer class="card__footer">
+        <span></span> HTML
+        <span></span> SCSS
+        <span></span> JavaScript
+        <span></span> Ruby on Rails
+      </footer>
+    </article>
+  </div>
+
+</div>
 
 <!-- <=========== JAVASCRIPT =============> -->
 <script src="app.js"></script>
