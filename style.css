@@ -1101,7 +1101,7 @@ form input:focus, form textarea:focus {
 .contact_button {
   background-color: rgb(3, 1, 15);
   padding: 15px;
-  /* border: 1px solid rgb(255, 241, 44); */
+  border: none;
   color: rgb(255, 10, 202);
   font-size: 18px;
   outline: none;
