@@ -30,7 +30,7 @@
 
 <!-- <=========== NAVBAR =============> -->
 
-<nav>
+<nav class="navbar sticky-top">
   <div class="logo">
     <a onclick="document.location='index.html'" href="#home"><img src="images/grey.png" alt="logo" class="logo-img"></a>
   </div>
@@ -73,7 +73,12 @@
 
   <div class="container_contact">
     <form id="contact-form" method="POST" action="https://formsubmit.co/ac88d98dd2e9e6cdc27e43545a8303f2">
+
+    <div class="contact_me">
       <h3>Contact Me</h3>
+      <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_ucns0iaz.json" class="contact_me_icon" background="transparent"  speed="1" loop  autoplay></lottie-player>
+    </div>
+
       <input name="name" type="text" id="name" placeholder="Name" required>
       <input name="email" type="email" id="email" placeholder="Email" required>
       <input type="hidden" name="_next" value="https://lea-ah.com/thanks.html">  <!-- Add my domain name! -->
